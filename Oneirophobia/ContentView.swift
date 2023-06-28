@@ -1,21 +1,23 @@
-//
-//  ContentView.swift
-//  Oneirophobia
-//
-//  Created by Thiago Liporace on 12/06/23.
-//
-
 import SwiftUI
+
+struct YellowBackground: View {
+    var body: some View {
+        self
+            .frame(maxWidth: .infinity)
+            .background {
+                Color("pale-yellow")
+                    .ignoresSafeArea()
+            }
+    }
+}
+
+
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationStack{
+            MainView()
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

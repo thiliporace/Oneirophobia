@@ -1,8 +1,11 @@
-//
-//  MyApp.swift
-//  Oneirophobia
-//
-//  Created by Thiago Liporace on 12/06/23.
-//
+import SwiftUI
 
-import Foundation
+@main
+struct MyApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+            //ImageAnimation();
+        }
+    }
+}
