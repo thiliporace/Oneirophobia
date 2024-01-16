@@ -11,9 +11,9 @@ struct MainView: View {
             VStack{
                 Image("deerskull").resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(maxWidth: 280, maxHeight: 240)
+                    .frame(maxWidth: 260, maxHeight: 220)
                     .clipShape(Circle())
-                    .padding(.bottom, 0)
+                    .padding(.top,20)
                     .padding(.horizontal)
                 
                 Text("  Oneirophobia").font(.system(size: 40, weight: .regular, design: .serif))
@@ -41,7 +41,7 @@ struct MainView: View {
                         .foregroundColor(.black).padding(.bottom,20).underline(color: .black)
                     
                     
-                }
+                }.navigationBarBackButtonHidden(true)
                 NavigationLink(destination: AnimationView()) {
                     Text("Credits").foregroundColor(.black).padding(.bottom, 8).font(.system(size: 16, weight: .regular, design: .serif))
                         .foregroundColor(.black).underline(color: .black)

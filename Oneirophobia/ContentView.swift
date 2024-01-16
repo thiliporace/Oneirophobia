@@ -6,7 +6,7 @@ struct YellowBackground: View {
             .frame(maxWidth: .infinity)
             .background {
                 Color("pale-yellow")
-                    .ignoresSafeArea()
+                    
             }
     }
 }
@@ -17,6 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             MainView()
+                .scaledToFill()
         }.navigationBarBackButtonHidden(true)
     }
 }
