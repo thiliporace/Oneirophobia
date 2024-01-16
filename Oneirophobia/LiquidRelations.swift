@@ -27,13 +27,13 @@ struct LiquidRelations: View {
                         Text("Stay inside.")
                             .font(.system(size: 21, weight: .regular, design: .serif))
                             .foregroundColor(.black).underline(color: .black)
-                    }
+                    }.navigationBarBackButtonHidden(true)
                     
                     NavigationLink(destination: Isolation()) {
                         Text("Leave the room.")
                             .font(.system(size: 21, weight: .regular, design: .serif))
                             .foregroundColor(.black).underline(color: .black)
-                    }
+                    }.navigationBarBackButtonHidden(true)
                     .padding()
                 }
                 .padding(.top)
