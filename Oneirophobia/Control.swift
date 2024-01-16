@@ -41,8 +41,8 @@ struct Control: View {
     }
 }
 
-struct Insanity_Previews: PreviewProvider {
+struct Control_Previews: PreviewProvider {
     static var previews: some View {
-        Insanity()
+        Control()
     }
 }
