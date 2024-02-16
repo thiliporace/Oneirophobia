@@ -4,7 +4,7 @@ struct Isolation: View {
     var body: some View {
         ZStack {
             Color(red: 0.93725, green: 0.89804, blue: 0.81176)
-                .frame(height:1000)
+                .frame(height:2000)
             VStack {
                 
                 VStack {
@@ -17,28 +17,28 @@ struct Isolation: View {
                     
                     Text("Thus let me live, unseen, unkown;")
                         .padding(.horizontal, 8)
-                        .font(.system(size: 17, weight: .regular, design: .serif))
+                        .font(.system(size: 18, weight: .regular, design: .serif))
                         .foregroundColor(.black).padding(.bottom,10)
                     Text("Thus unlamented let me die;")
                         
-                        .font(.system(size: 17, weight: .regular, design: .serif))
+                        .font(.system(size: 18, weight: .regular, design: .serif))
                         .foregroundColor(.black).padding(.bottom,10)
                     Text("Steal from the world, and not a stone;")
                         
-                        .font(.system(size: 17, weight: .regular, design: .serif))
+                        .font(.system(size: 18, weight: .regular, design: .serif))
                         .foregroundColor(.black).padding(.bottom,10)
                     Text("Tell where I lie.")
                         
-                        .font(.system(size: 17, weight: .regular, design: .serif))
+                        .font(.system(size: 18, weight: .regular, design: .serif))
                         .foregroundColor(.black).padding(.bottom,30)
                     Text(" - Alexander Pope")
                         
-                        .font(.system(size: 17, weight: .regular, design: .serif))
+                        .font(.system(size: 18, weight: .regular, design: .serif))
                         .foregroundColor(.black).padding(.bottom,80)
                     Text("Ending A")
                         
                         .font(.system(size: 40, weight: .regular, design: .serif))
-                        .foregroundColor(.black).padding(.bottom,20)
+                        .foregroundColor(.black)
                 }
                 .padding(.bottom)
                 .padding(.horizontal)

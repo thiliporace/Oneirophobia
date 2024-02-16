@@ -8,6 +8,7 @@ struct MainView: View {
     var body: some View {
         ZStack{
             Color(red: 0.93725, green: 0.89804, blue: 0.81176)
+                .frame(width:2000,height:2000)
             VStack{
                 Image("deerskull").resizable()
                     .aspectRatio(contentMode: .fill)
@@ -20,11 +21,11 @@ struct MainView: View {
                     .foregroundColor(.black)
                     .padding(.bottom, 30)
                 
-                Text("     This story has multiple").font(.system(size: 17, weight: .regular, design: .serif))
+                Text("     This story has multiple").font(.system(size: 17, weight: .bold, design: .serif))
                     .foregroundColor(.black)
                     .padding(.bottom, 10)
                 
-                Text("     possible endings.").font(.system(size: 17, weight: .regular, design: .serif))
+                Text("     possible endings.").font(.system(size: 17, weight: .bold, design: .serif))
                     .foregroundColor(.black)
                     .padding(.bottom, 150)
                 
@@ -51,5 +52,12 @@ struct MainView: View {
         
 
         }
+    }
+}
+
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
     }
 }

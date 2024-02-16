@@ -4,7 +4,7 @@ struct LargeDoor: View {
     var body: some View {
         ZStack {
             Color(red: 0.93725, green: 0.89804, blue: 0.81176)
-                .frame(height: 1000)
+                .frame(height: 2000)
             VStack {
                 
                 VStack {
