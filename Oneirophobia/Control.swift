@@ -26,13 +26,13 @@ struct Control: View {
                     Text("This is what you always wanted.")
                         .font(.system(size: 21, weight: .regular, design: .serif))
                         .foregroundColor(.black).padding(.bottom,25).underline(color: .black)
-                }
+                }.navigationBarBackButtonHidden(true)
                 
                 NavigationLink(destination: LiquidRelations()) {
                     Text("Run away from the stage.")
                         .font(.system(size: 21, weight: .regular, design: .serif))
                         .foregroundColor(.black).padding(.bottom,0).underline(color: .black)
-                }
+                }.navigationBarBackButtonHidden(true)
                 
                 
                 
